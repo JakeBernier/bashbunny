@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Title:             Android web download/install meterpreter shell
+# Title:             Android web download/install apk
 # Author:            r1ddl3r
 # Target:            Android 5.1.1 - Nexus 9
 #	props: DemmSec FireTV payload - https://github.com/hak5/bashbunny-payloads/blob/master/payloads/library/android/fireytv/payload.txt
